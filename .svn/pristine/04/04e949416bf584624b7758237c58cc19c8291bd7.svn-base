@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXDrawer?>
+<?import com.jfoenix.controls.JFXHamburger?>
+<?import javafx.scene.control.Accordion?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TitledPane?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="center" minHeight="-Infinity" prefHeight="800.0" prefWidth="1344.0" stylesheets="@../../../../theme/application.css" xmlns="http://javafx.com/javafx/8.0.141" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.j3technology.controller.DashboardController">
+   <children>
+      <StackPane fx:id="main_stack_pane" layoutY="22.0" prefHeight="779.0" prefWidth="1210.0">
+         <children>
+            <JFXDrawer fx:id="drawer" prefHeight="779.0" prefWidth="248.0">
+               <children>
+                  <AnchorPane fx:id="pane" prefHeight="788.0" prefWidth="248.0">
+                     <children>
+                        <Pane fx:id="j3anchor" layoutX="4.0" prefHeight="98.0" prefWidth="253.0" />
+                        <Accordion layoutY="98.0" prefHeight="123.0" prefWidth="248.0">
+                          <panes>
+                            <TitledPane animated="false" prefHeight="200.0" prefWidth="248.0" text="Transactions">
+                              <content>
+                                <AnchorPane minHeight="-Infinity" minWidth="-Infinity" prefHeight="271.0" prefWidth="246.0">
+                                       <children>
+                                          <VBox prefHeight="263.0" prefWidth="248.0">
+                                             <children>
+                                                <JFXButton fx:id="sale_btn" alignment="BASELINE_LEFT" prefHeight="40.0" prefWidth="250.0" text="Sales " />
+                                                <JFXButton fx:id="salesReturn_btn" alignment="BASELINE_LEFT" prefHeight="40.0" prefWidth="250.0" text="Sales Return" />
+                                                <JFXButton fx:id="salesOrder_btn" alignment="BASELINE_LEFT" prefHeight="40.0" prefWidth="250.0" text="Sales Order" />
+                                                <JFXButton fx:id="salesCallane_btn" alignment="BASELINE_LEFT" prefHeight="40.0" prefWidth="250.0" text="Sales Challane" />
+                                                <JFXButton fx:id="purchase_btn" alignment="BASELINE_LEFT" prefHeight="40.0" prefWidth="250.0" text="Purchase" />
+                                                <JFXButton fx:id="purchaseReturn_btn" alignment="BASELINE_LEFT" prefHeight="40.0" prefWidth="250.0" text="Purchase Return" />
+                                                <JFXButton fx:id="purchaseOrder_btn" alignment="BASELINE_LEFT" prefHeight="40.0" prefWidth="250.0" text="Purchase Order" />
+                                                <JFXButton fx:id="purchaseCallane_btn" alignment="BASELINE_LEFT" prefHeight="33.0" prefWidth="250.0" text="Purchase Challane" />
+                                             </children>
+                                          </VBox>
+                                       </children>
+                                    </AnchorPane>
+                              </content>
+                            </TitledPane>
+                            <TitledPane animated="false" prefHeight="372.0" prefWidth="248.0" text="Masters">
+                              <content>
+                                <AnchorPane minHeight="-Infinity" minWidth="-Infinity" prefHeight="353.0" prefWidth="246.0">
+                                       <children>
+                                          <VBox minHeight="-Infinity" minWidth="-Infinity">
+                                             <children>
+                                                <JFXButton fx:id="accountGroup_btn" alignment="BASELINE_LEFT" onAction="#handleAccountGroup" prefHeight="40.0" prefWidth="250.0" text="Account Groups" />
+                                                <JFXButton fx:id="accountMaster_btn" alignment="BASELINE_LEFT" onAction="#handleAccountMaster" prefHeight="40.0" prefWidth="245.0" text="Account Master" />
+                                                <JFXButton fx:id="companyMaster_btn" alignment="BASELINE_LEFT" onAction="#handleCompanyMaster" prefHeight="40.0" prefWidth="246.0" text="Company Master" />
+                                                <JFXButton fx:id="genericMaster_btn" alignment="BASELINE_LEFT" onAction="#handleGenericMaster" prefHeight="40.0" prefWidth="244.0" text="Generic Master" />
+                                                <JFXButton fx:id="gstMaster_btn" alignment="BASELINE_LEFT" onAction="#handleGSTMaster" prefHeight="37.0" prefWidth="244.0" text="GST Master" />
+                                                <JFXButton fx:id="salesmanMaster_btn" alignment="BASELINE_LEFT" onAction="#handleSalesmanMaster" prefHeight="35.0" prefWidth="244.0" text="Salesman Master" />
+                                                <JFXButton fx:id="itemEntry_btn" alignment="BASELINE_LEFT" onAction="#handleItemEntry" prefHeight="40.0" prefWidth="245.0" text="Item Entry" />
+                                                <JFXButton fx:id="stockEntry_btn" alignment="BASELINE_LEFT" onAction="#handleStockEntry" prefHeight="40.0" prefWidth="247.0" text="Stock Entry" />
+                                                <JFXButton fx:id="stockAdjuctment_btn" alignment="BASELINE_LEFT" onAction="#handleStockAdjectment" prefHeight="40.0" prefWidth="245.0" text="Stock Adjectment" />
+                                             </children>
+                                          </VBox>
+                                       </children>
+                                    </AnchorPane>
+                              </content>
+                            </TitledPane>
+                            <TitledPane animated="false" prefHeight="264.0" prefWidth="248.0" text="Accounts">
+                              <content>
+                                <AnchorPane minHeight="-Infinity" minWidth="-Infinity" prefHeight="244.0" prefWidth="246.0">
+                                       <children>
+                                          <VBox layoutX="-5.0" layoutY="-4.0" prefHeight="240.0" prefWidth="248.0">
+                                             <children>
+                                                <JFXButton fx:id="creaditNote_btn" alignment="BASELINE_LEFT" minWidth="-Infinity" prefHeight="40.0" prefWidth="250.0" text="Credit Note" />
+                                                <JFXButton fx:id="debitNote_btn" alignment="BASELINE_LEFT" minWidth="-Infinity" prefHeight="40.0" prefWidth="250.0" text="Debit Note" />
+                                                <JFXButton fx:id="receiptVoucher_btn" alignment="BASELINE_LEFT" minWidth="-Infinity" prefHeight="40.0" prefWidth="250.0" text="Receipt Voucher" />
+                                                <JFXButton fx:id="paymentVoucher_btn" alignment="BASELINE_LEFT" minWidth="-Infinity" prefHeight="40.0" prefWidth="250.0" text="Payment Voucher" />
+                                                <JFXButton fx:id="contraVoucher_btn" alignment="BASELINE_LEFT" minWidth="-Infinity" prefHeight="40.0" prefWidth="250.0" text="Contra Voucher" />
+                                                <JFXButton fx:id="journalVoucher_btn" alignment="BASELINE_LEFT" minWidth="-Infinity" prefHeight="40.0" prefWidth="250.0" text="Journal Voucher" />
+                                             </children>
+                                          </VBox>
+                                       </children>
+                                    </AnchorPane>
+                              </content>
+                            </TitledPane>
+                              <TitledPane animated="false" text="Reports">
+                                <content>
+                                  <AnchorPane minHeight="-Infinity" minWidth="-Infinity" prefHeight="167.0" prefWidth="246.0">
+                                       <children>
+                                          <VBox prefHeight="167.0" prefWidth="248.0">
+                                             <children>
+                                                <JFXButton fx:id="btn_sales_register" alignment="BASELINE_LEFT" onAction="#handleStockAdjectment" prefHeight="40.0" prefWidth="250.0" text="Sales Register" />
+                                                <JFXButton fx:id="btn_purchase_register" alignment="BASELINE_LEFT" onAction="#handleStockAdjectment" prefHeight="40.0" prefWidth="250.0" text="Purchase Register" />
+                                                <JFXButton fx:id="btn_gst_report" alignment="BASELINE_LEFT" onAction="#handleStockAdjectment" prefHeight="40.0" prefWidth="250.0" text="GST Report" />
+                                                <JFXButton fx:id="btn_stock_report" alignment="BASELINE_LEFT" onAction="#handleStockAdjectment" prefHeight="40.0" prefWidth="250.0" text="Stock Report" />
+                                             </children>
+                                          </VBox>
+                                       </children>
+                                    </AnchorPane>
+                                </content>
+                              </TitledPane>
+                          </panes>
+                        </Accordion>
+                     </children>
+                  </AnchorPane>
+               </children>
+            </JFXDrawer>
+         </children></StackPane>
+      <AnchorPane layoutX="-2.0" layoutY="22.0" prefHeight="25.0" prefWidth="40.0">
+         <children>
+            <JFXHamburger fx:id="hamburger" layoutX="6.0" layoutY="9.0" prefHeight="20.0" prefWidth="30.0" />
+         </children>
+      </AnchorPane>
+      <AnchorPane fx:id="title_bar" prefHeight="24.0" prefWidth="1357.0">
+         <children>
+            <Label layoutX="6.0" layoutY="-1.0" prefHeight="25.0" prefWidth="84.0" text="Dashboard" textFill="#651313">
+               <font>
+                  <Font name="Estrangelo Edessa" size="15.0" />
+               </font>
+            </Label>
+         </children>
+      </AnchorPane>
+      <JFXButton fx:id="window_close" contentDisplay="GRAPHIC_ONLY" layoutX="1331.0" layoutY="6.0" onAction="#closeProgram" prefHeight="12.0" prefWidth="12.0" text="Button">
+         <font>
+            <Font size="1.0" />
+         </font>
+      </JFXButton>
+      <JFXButton fx:id="window_maximize" contentDisplay="GRAPHIC_ONLY" layoutX="1288.0" layoutY="6.0" onAction="#minimizeProgram" prefHeight="12.0" prefWidth="12.0">
+         <font>
+            <Font size="1.0" />
+         </font>
+      </JFXButton>
+      <JFXButton fx:id="window_minimize" contentDisplay="GRAPHIC_ONLY" layoutX="1310.0" layoutY="6.0" onAction="#maximizeProgram" prefHeight="12.0" prefWidth="12.0">
+         <font>
+            <Font size="1.0" />
+         </font>
+      </JFXButton>
+      <AnchorPane layoutX="1215.0" layoutY="24.0" prefHeight="779.0" prefWidth="142.0" style="-fx-background-color: #9E9E9E;" />
+   </children>
+</AnchorPane>

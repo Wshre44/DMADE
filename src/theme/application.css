@@ -1,0 +1,249 @@
+.root{
+    
+    -fx-background-repeat: no-repeat ;
+    -fx-background-size:stretch;
+}
+/****************************************************************************************
+*                                                                                       *
+*                    Hamburger                                                        *
+*                                                                                       *
+*****************************************************************************************/
+#hamburger {
+    -fx-spacing: 5;
+    -fx-cursor: hand;
+}
+
+#hamburger StackPane {
+    -fx-pref-width: 40px;
+    -fx-pref-height: 7px;
+    -fx-background-color: #01579B;
+    -fx-background-radius: 5px;
+}
+
+/****************************************************************************************
+*                                                                                       *
+*                    Text Headling Label                                                       *
+*                                                                                       *
+*****************************************************************************************/
+#j{
+    -fx-text-fill: #E64A19;
+    -fx-font-family: gabriola;
+    -fx-font-size:51px;
+}
+#tech
+{
+    -fx-text-fill: #006064;
+    -fx-font-family:gabriola;
+    -fx-font-size:40px;
+}
+/****************************************************************************************
+*                                                                                       *
+*                   Anchorpanes                                                    *
+*                                                                                       *
+*****************************************************************************************/
+#pane
+{
+     -fx-background-color:  linear-gradient(#757575, #757575);
+}
+#title_bar
+{
+     -fx-background-color: #EFEBE9 ;
+}
+
+/****************************************************************************************
+*                                                                                       *
+*                    BUTTON                                                             *
+*                                                                                       *
+*****************************************************************************************/
+
+#accountGroup_btn,#accountMaster_btn,#companyMaster_btn,#companyMaster_btn,#doctorMaster_btn,#genericMaster_btn,#gstMaster_btn,
+#patientMaster_btn,#salesmanMaster_btn,#itemEntry_btn,#stockEntry_btn,#stockAdjuctment_btn,#sale_btn,#salesReturn_btn,#salesOrder_btn,
+#salesCallane_btn,#purchase_btn,#purchaseReturn_btn,#purchaseOrder_btn,#purchaseCallane_btn,#creaditNote_btn,#debitNote_btn,#receiptVoucher_btn,
+#paymentVoucher_btn,#contraVoucher_btn,#journalVoucher_btn,#btn_sales_register,#btn_purchase_register,#btn_gst_report,#btn_stock_report{
+ /* -fx-background-color: rgba(15,17,13,0.2);*/
+  -fx-background-radius: 30;
+  -fx-background-insets: 0,1,2,3,0;
+  -fx-text-fill: #E0F7FA;
+  /*-fx-text-fill: white;/*rgb(153, 102, 102);cyan,dodgerblue*/
+  -fx-font-family: Cambria;
+  -fx-font-weight: bold;
+  -fx-font-size: 14px;
+  -fx-effect: dropshadow( three-pass-box , rgba(55,71,79 ,1) , 5, 0.0 , 0 , 1 );
+  -fx-alignment: CENTER;
+}
+#accountGroup_btn:hover,#accountMaster_btn:hover,#companyMaster_btn:hover,#companyMaster_btn:hover,#doctorMaster_btn:hover,
+#genericMaster_btn:hover,#gstMaster_btn:hover,#patientMaster_btn:hover,#salesmanMaster_btn:hover,#itemEntry_btn:hover,
+#stockEntry_btn:hover,#stockAdjuctment_btn:hover,#sale_btn:hover,#salesReturn_btn:hover,#salesOrder_btn:hover,#salesCallane_btn:hover,
+#purchase_btn:hover,#purchaseReturn_btn:hover,#purchaseOrder_btn:hover,#purchaseCallane_btn:hover,#creaditNote_btn:hover,
+#debitNote_btn:hover,#receiptVoucher_btn:hover,#paymentVoucher_btn:hover,#contraVoucher_btn:hover,#journalVoucher_btn:hover,
+#btn_sales_register:hover,#btn_purchase_register:hover,#btn_gst_report:hover,#btn_stock_report:hover{
+    -fx-background-color: linear-gradient(#424242, #FAFAFA);
+   
+    -fx-text-fill: linear-gradient(#424242, #d50000);
+   
+    -fx-font-family: Cambria;
+    -fx-font-weight: bold;
+    -fx-font-size: 16px;
+      -fx-alignment: CENTER;
+    -fx-effect: dropshadow( three-pass-box , rgba(0,0,0,0.7) , 5, 0.0 , 0 , 1 );
+    
+}
+
+#accountGroup_btn:pressed,#accountMaster_btn:pressed,#companyMaster_btn:pressed,#companyMaster_btn:pressed,#doctorMaster_btn:pressed,
+#genericMaster_btn:pressed,#gstMaster_btn:pressed,#patientMaster_btn:pressed,#salesmanMaster_btn:pressed,#itemEntry_btn:pressed,
+#stockEntry_btn:pressed,#stockAdjuctment_btn:pressed,#sale_btn:pressed,#salesReturn_btn:pressed,#salesOrder_btn:pressed,#salesCallane_btn:pressed,
+#purchase_btn:pressed,#purchaseReturn_btn:pressed,#purchaseOrder_btn:pressed,#purchaseCallane_btn:pressed,#creaditNote_btn:pressed,
+#debitNote_btn:pressed,#receiptVoucher_btn:pressed,#paymentVoucher_btn:pressed,#contraVoucher_btn:pressed,#journalVoucher_btn:pressed,
+#btn_sales_register:pressed,#btn_purchase_register:pressed,#btn_gst_report:pressed,#btn_stock_report:pressed
+{
+    -fx-background-color:#00E5FF;
+    -fx-border-color: #4DD0E1;
+    -fx-text-fill: #37474F;
+    -fx-background-radius: 30;
+    -fx-border-radius: 30;
+    
+    -fx-font-family: Cambria;
+    -fx-font-weight: bold;
+    -fx-font-size: 16px;
+     -fx-alignment: CENTER;
+    -fx-effect: dropshadow( three-pass-box , rgba(0,0,0,0.6) , 5, 0.0 , 0 , 1 );
+}
+
+
+/****************************************************************************************
+*                                                                                       *
+*                    Window BUTTON                                                             *
+*                                                                                       *
+*****************************************************************************************/
+#window_close{
+    -fx-background-color:radial-gradient(focus-angle 45deg , focus-distance 20% , 
+			center 25% 25% , radius 75% ,
+			reflect, #ff0900, #090a0c 75% , #ff0900);
+    -fx-background-radius: 50px;
+}
+#window_maximize{
+    -fx-background-color:radial-gradient(focus-angle 45deg , focus-distance 20% ,
+			center 25% 25% , radius 75% ,
+			reflect, #00ff7f, #090a0c 75% , #00ff7f);
+    -fx-background-radius: 50px; 
+}
+#window_minimize{/*#00ff7f */
+    -fx-background-color:radial-gradient(focus-angle 45deg , focus-distance 20% ,
+			center 25% 25% , radius 75% ,
+			reflect, #F8C471, #090a0c 75% , #F8C471);
+    -fx-background-radius: 50px; /* #F8C471*/
+}
+
+
+/****************************************************************************************
+*                                                                                       *
+*                   accordian                                                      *
+*                                                                                       *
+*****************************************************************************************/
+.accordion .titled-pane .title {
+    -fx-background-color: transparent ;
+}
+
+.accordion .titled-pane > *.content{
+    -fx-background-color: transparent ;
+}
+.titled-pane
+{
+    -fx-background-color: linear-gradient(#EFEBE9, #757575);
+    -fx-text-fill:#212121 ;
+    -fx-font-size: 20px;
+    -fx-font-family: Cambria;
+    -fx-font-weight: bold;
+}
+.titled-pane:focused 
+{
+    -fx-text-fill:#263238;
+}
+.titled-pane > .title 
+{
+-fx-background-color: -fx-box-border, -fx-inner-border, -fx-body-color;
+-fx-background-insets: 0, 1, 2;
+-fx-background-radius: 5 5 0 0, 4 4 0 0, 3 3 0 0;
+-fx-padding: 0.166667em 0.833333em 0.25em 0.833333em; /* 2 10 3 10 */
+}
+
+.titled-pane:focused > .title 
+{
+-fx-color: -fx-focus-color;
+}
+
+.titled-pane > .title > .arrow-button 
+{
+-fx-background-color: null;
+-fx-background-insets: 0;
+-fx-background-radius: 0;
+-fx-padding: 0.0em 0.25em 0.0em 0.0em; /* 0 3 0 0 */
+}
+
+.titled-pane > .title > .arrow-button .arrow 
+{
+-fx-background-color: -fx-mark-highlight-color, #263238;
+-fx-background-insets: 1 0 -1 0, 0;
+-fx-padding: 0.25em 0.3125em 0.25em 0.3125em; /* 3 3.75 3 3.75 */
+-fx-shape: "M 0 0 h 7 l -3.5 4 z";
+}
+
+.titled-pane:collapsed > .title > .arrow-button .arrow 
+{
+-fx-rotate: -90;
+}
+
+.titled-pane > *.content 
+{
+-fx-background-color:#FAFAFA;
+-fx-box-border:  linear-gradient(to bottom, derive(-fx-color,-02%), derive(-fx-color,65%) 12%,      derive(-fx-color,23%) 88%, derive(-fx-color,50%) 99%, -fx-box-border);
+-fx-background-insets: 0, 0 1 1 1;
+-fx-padding: 0.167em;
+ }
+
+.titled-pane:focused > .title > .arrow-button .arrow 
+{
+-fx-background-color: #263238;
+}
+
+
+
+/****************************************************************************************
+*                                                                                       *
+*                   Form Headings                                                    *
+*                                                                                       *
+*****************************************************************************************/
+
+#acc_group_heading{
+    -fx-text-fill: #FAFAFA;
+    -fx-font-family:Calibri;
+    -fx-font-size:25px;
+}
+
+
+/****************************************************************************************
+*                                                                                       *
+*                   All Forms Anchorpane                                                *
+*                                                                                       *
+*****************************************************************************************/
+
+#account_group{
+    -fx-background-color: #fff;
+}
+
+
+
+
+
+
+
+/****************************************************************************************
+*                                                                                       *
+*                   All Forms Anchorpane's headerpane                                               *
+*                                                                                       *
+*****************************************************************************************/
+
+#header_pane{
+    -fx-background-color: #9E9E9E;
+    -fx-pref-height: 27px;
+}
